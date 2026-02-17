@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life of Julie - The Kuraha Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6e3;
+            font-family: 'Open Sans', sans-serif;
+            color: #444;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3.5rem;
+            color: #d35400;
+            margin: 0;
+            text-shadow: 2px 2px #fff;
+        }
+
+        .location {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .julie-photo-container {
+            width: 100%;
+            max-width: 600px;
+            border: 15px solid white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .julie-photo-container:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .julie-photo-container img {
+            width: 100%;
+            display: block;
+        }
+
+        .about-section {
+            max-width: 700px;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .paws {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 40px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            margin: 0;
+            color: #d35400;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .stat-card p {
+            margin: 5px 0 0;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #128c7e;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The World of Julie</h1>
+    <div class="location">📍 Kuraha's Favorite Labrador</div>
+</header>
+
+<div class="main-content">
+    <div class="julie-photo-container">
+        <img src="julie.jpg" alt="Julie the Labrador">
+    </div>
+
+    <div class="about-section">
+        <div class="paws">🐾 🦴 🐾</div>
+        <p>
+            Meet <strong>Julie</strong>, the heart and soul of Kuraha. A beautiful black Labrador with eyes that see straight into your soul (and your snacks). 
+            She spends her days patrolling the porch, keeping an eye on the neighborhood, and perfecting the art of the <em>"I haven't been fed in years"</em> look.
+        </p>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Breed</h3>
+            <p>Black Labrador</p>
+        </div>
+        <div class="stat-card">
+            <h3>Base</h3>
+            <p>Kuraha</p>
+        </div>
+        <div class="stat-card">
+            <h3>Specialty</h3>
+            <p>Goodest Girl</p>
+        </div>
+        <div class="stat-card">
+            <h3>Hobby</h3>
+            <p>Porch Patrol</p>
+        </div>
+    </div>
+
+    <a href="https://wa.me/918884324836" class="contact-btn">Message Julie's Human</a>
+</div>
+
+<footer>
+    &copy; 2026 *Klaus* - _bot by Anurag_ 🤟🐼🤟
+</footer>
+
+</body>
+</html>
